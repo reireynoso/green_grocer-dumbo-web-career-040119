@@ -57,9 +57,8 @@ end
 
 def checkout(cart, coupons)
   # code here
-  puts cart
-  puts cart.length
-  #new_hash = consolidate_cart(cart)
+  
+  new_hash = consolidate_cart(cart)
   #puts new_hash
   #newer_hash = apply_coupons(new_hash,coupons)
   #puts newer_hash
