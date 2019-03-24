@@ -67,5 +67,6 @@ def checkout(cart, coupons)
   #puts newer_hash
   #newest_hash = apply_clearance(newer_hash)
   #puts newest_hash
-  
+  puts new_hash
+  return new_hash
 end
