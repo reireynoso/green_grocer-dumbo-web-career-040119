@@ -68,5 +68,5 @@ def checkout(cart, coupons)
   #newest_hash = apply_clearance(newer_hash)
   #puts newest_hash
   #puts new_hash
-  return new_hash[:price]
+  return new_hash
 end
