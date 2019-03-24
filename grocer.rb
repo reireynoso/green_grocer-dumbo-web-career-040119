@@ -60,8 +60,8 @@ def checkout(cart, coupons)
   price = 0
   new_hash = consolidate_cart(cart)
   if new_hash.length == 1
-    new_hash = apply_coupons(new_hash,coupons)
-    new_hash = apply_clearance(new_hash)
+    nw_hash = apply_coupons(new_hash,coupons)
+    new_hash = apply_clearance(new_hash)e
     new_hash.each do |key,value|
       price = value[:price]
     end
