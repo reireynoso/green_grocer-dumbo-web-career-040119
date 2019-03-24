@@ -78,6 +78,9 @@ def checkout(cart, coupons)
       price += (value[:price]*value[:count])
     end
   end
- 
+ if price > 100
+   sale = price * 0.10
+   price = price - sale
+ end
   return price
 end
