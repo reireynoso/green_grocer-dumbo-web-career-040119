@@ -59,7 +59,8 @@ def checkout(cart, coupons)
   # code here
   
   new_hash = consolidate_cart(cart)
-  #puts new_hash
+  if newer_hash.length == 1
+    
   #newer_hash = apply_coupons(new_hash,coupons)
   #puts newer_hash
   #newest_hash = apply_clearance(newer_hash)
