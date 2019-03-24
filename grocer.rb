@@ -57,11 +57,13 @@ end
 
 def checkout(cart, coupons)
   # code here
-  new_hash = consolidate_cart(cart)
-  puts new_hash
-  newer_hash = apply_coupons(new_hash,coupons)
-  puts newer_hash
-  newest_hash = apply_clearance(newer_hash)
-  puts newest_hash
+  puts cart
+  puts cart.length
+  #new_hash = consolidate_cart(cart)
+  #puts new_hash
+  #newer_hash = apply_coupons(new_hash,coupons)
+  #puts newer_hash
+  #newest_hash = apply_clearance(newer_hash)
+  #puts newest_hash
   
 end
