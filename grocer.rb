@@ -63,7 +63,7 @@ def checkout(cart, coupons)
     new_hash = apply_coupons(new_hash,coupons)
     new_hash = apply_clearance(new_hash)
     new_hash.each do |key,value|
-      price = value[:price]
+      price += value[:price]
     end
   end
   #newer_hash = apply_coupons(new_hash,coupons)
