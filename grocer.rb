@@ -64,14 +64,18 @@ def checkout(cart, coupons)
     new_hash = apply_clearance(new_hash)
     if new_hash.length > 1
       new_hash.each do |key,value|
-        puts key
+        price += (value[:price]*value[:count])
+      end
+    else
+      new_hash.each do |key,value|
+        price += (value[:price]*value[:count])
       end
     end
   else
     new_hash = apply_coupons(new_hash,coupons)
     new_hash = apply_clearance(new_hash)
     new_hash.each do |key,value|
-      price += value[:price]
+      price += (value[:price]*value[:count])
     end
   end
  
